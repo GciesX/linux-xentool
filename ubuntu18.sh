@@ -15,5 +15,6 @@ pwd=$(xenstore-read vm-data/xpwd)
 if [ $pwd ] # check if xpwd exist 
 then
         echo -e "$pwd\n$pwd" | passwd drite # change password
+        echo -e "$pwd\n$pwd" | passwd root # change password
         xenstore-rm vm-data/xpwd # remove data from xen variable
 fi
