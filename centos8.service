@@ -1,0 +1,9 @@
+[Unit]
+Description=Linux Xen tool for drite nuxt js website
+After=network.target
+[Service]
+User=root
+ExecStart=/bin/bash /etc/drite.sh
+
+[Install]
+WantedBy=multi-user.target  
